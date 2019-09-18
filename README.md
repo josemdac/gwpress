@@ -12,7 +12,7 @@ Some slides might come with an image, and should be placed in the `images` folde
 Once the slides are properly defined, just copy your files or run a server in the folder, and load `index.html`.
 
 During your presentation, you can control the presentation by using the following keys:
-..* Press `i` to start the intro
-..* Press `n` to show and go forward
-..* Press `b` to go back and show the previous slide
-..* Press `f` to go the end
+* Press `i` to start the intro
+* Press `n` to show and go forward
+* Press `b` to go back and show the previous slide
+* Press `f` to go the end
