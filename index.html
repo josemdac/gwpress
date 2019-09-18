@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="generator" content="Three.js Editor">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body ontouchstart="">
+    <script src="js/three.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/steps.js"></script>
+    <script src="js/expo.js"></script>
+    <script src="js/expo_data.js"></script>
+    <style>
+        body {
+            background-color: #000;
+            margin: 0px;
+            overflow: hidden;
+        }
+    </style>
+    <script>
+        var player = new APP.Player();
+        player.load(appdata);
+        player.setSize(window.innerWidth, window.innerHeight);
+        player.play();
+
+        document.body.appendChild(player.dom);
+
+        window.addEventListener('resize', function() {
+            player.setSize(window.innerWidth, window.innerHeight);
+        });
+        $(document).ready(function() {
+            $(document).on('keypress', function(e) {
+                if (e.key == 'i') {
+                    Handler.intro();
+                };
+                if (e.key == 'n') {
+                    Handler.expo.duration = 5000;
+                    Handler.expo.next();
+                    Handler.toggle_slide();
+                };
+                if (e.key == 'b') {
+                    Handler.expo.duration = 5000;
+                    Handler.expo.prev();
+                    Handler.toggle_slide();
+                };
+                if (e.key == 'f') {
+                    Handler.expo.duration = 8000;
+                    Handler.expo.end();
+                    Handler.final();
+                }
+            });
+        });
+    </script>
+    <div class="expo_text">
+    </div>
+    <div class="expo_frame"></div>
+</body>
+
+</html>

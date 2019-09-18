@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="generator" content="Three.js Editor">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 13px;
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<body ontouchstart="">
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/expo.js"></script>
+    <script>
+        /*testing data sample*/
+        slides = [{
+            tags: {
+                title: 'Presentacion 1',
+                text: 'Esta es una presentacion de prueba'
+            },
+            template: 'text'
+        }, {
+            tags: {
+                title: 'Presentacion 2',
+                text: 'Esta es una presentacion de prueba 2'
+            },
+            template: 'items',
+            items: [{
+                'item_text': 'Elemento 1'
+            }, {
+                'item_text': 'Elemento 2'
+            }, {
+                'item_text': 'Elemento 3'
+            }]
+        }, {
+            tags: {
+                title: 'Presentacion 3',
+                text: 'Esta es una presentacion de prueba 3',
+                image: 'logo_next.jpg'
+            },
+            template: 'items+image',
+            items: [{
+                'item_text': 'Elemento 1'
+            }, {
+                'item_text': 'Elemento 2'
+            }, {
+                'item_text': 'Elemento 3'
+            }]
+        }]
+    </script>
+    <div class="expo_text">
+    </div>
+</body>
+
+</html>
