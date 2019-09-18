@@ -2,7 +2,7 @@
 A 3D slide presentation tool 
 
 #Usage - Creating your slides
-Within the `js/expo_data.js` file edit your slides and its contents. Each element of the `slides` var represents ne slide. The template file used must be a HTML file located in the `templates` folder.
+Within the `js/expo_data.js` file edit your slides and its contents. Each element of the `slides` var represents one slide. The template file used must be a HTML file located in the `templates` folder.
 
 The template may have "sub-templates", which will iterate over a set of items and should be enclosed in a `<for></for>` XML tag.
 
