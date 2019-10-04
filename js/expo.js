@@ -6,7 +6,7 @@ class Expo {
         this.target_div = target;
         this.target_frame = frame;
         this.end_message = end_message;
-        this.duration = 3000;
+        this.duration = 1000;
     }
 
     slide_render_0(slide) {

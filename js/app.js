@@ -52,7 +52,7 @@ class Handler {
 
     static intro() {
         $(this.eh).trigger('intro');
-        this.step_size = 300;
+        this.step_size = 100;
         this.speed = 1;
         var pO = this;
         this.open_door();

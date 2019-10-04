@@ -1,91 +1,143 @@
 /*testing data sample*/
 var slides = [{
     tags: {
-        title: 'Presentacion 1',
-        text: 'Esta es una presentacion de prueba'
+        title: 'INFORME TÉCNICO JURIDICO MODALIDAD PRACTICA FORENSE REALIZADO EN EL DEPARTAMENTO JURÍDICO DE PETRO SAN FELIX PDVSA',
+        pasante: 'Duran Brito, Fiorella del Carmen',
+        cedula: 'V18416750',
+        asesor_acad: 'Abg. Omar Martínez',
+        asesor_ext: 'Abg. Yazmin Zapata',
+        fecha: 'Barcelona, Octubre 2019'
     },
-    template: 'text'
+    template: 'portada'
 }, {
     tags: {
-        title: 'Presentacion 2',
-        text: 'Esta es una presentacion de prueba 2'
+        title: 'Introducción',
+        text: 'Pasantías en la empresa Mixta Petro San Felix, S.A.'
     },
     template: 'items',
     items: [{
-        'item_text': 'Elemento 1'
+        'item_text': '<strong>Departamento: </strong>Gerencia de asuntos legales'
     }, {
-        'item_text': 'Elemento 2'
+        'item_text': '<strong>Caso #1</strong>: Emergencia comprobada'
     }, {
-        'item_text': 'Elemento 3'
+        'item_text': '<strong>Caso #2</strong>: Modificaciones de contrato (Addendum)'
+    }, {
+        'item_text': 'Estudios sobre el ambito corporativo'
     }]
 }, {
     tags: {
-        title: 'Presentacion 3',
+        title: 'Departamento Jurídico de Petro San Felix S.A.',
         text: 'Esta es una presentacion de prueba 3',
-        image: 'logo_next.jpg'
+        image: 'pdvsa-logo.png',
+        logo_class: 'logo_petro',
+        organigrama: 'org.png'
     },
-    template: 'items+image',
+    template: 'empresa',
     items: [{
-        'item_text': 'Elemento 1'
+        'item_text': '<strong>Misión</strong> '
     }, {
-        'item_text': 'Elemento 2'
+        'item_text': '<strong>Visión</strong> '
     }, {
-        'item_text': 'Elemento 3'
+        'item_text': '<strong>Valores</strong> '
     }]
 }, {
     tags: {
-        title: 'Presentacion 4',
-        text: 'Esta es una presentacion de prueba 5',
-        image: 'logo_next.jpg'
+        title: 'Actividades realizadas durante las pasantías',
+        text: ''
     },
-    template: 'items+image',
+    template: 'items',
     items: [{
-        'item_text': 'Elemento 1'
+        'item_text': 'Inducción con la presentación de los integrantes de la gerencia legal.'
     }, {
-        'item_text': 'Elemento 2'
+        'item_text': 'Orientación de las actividades inherentes a la gerencia legal por la Abg. Yazmín Zapata.'
     }, {
-        'item_text': 'Elemento 3'
+        'item_text': 'Revisión de leyes, reglamentos, y normativas internas de Petro San Felix S.A.'
+    }, {
+        'item_text': 'Análisis de las normativas, leyes y reglamentos para la relación con archivos de casos realizados por la gerencia.'
+    }, {
+        'item_text': 'La pasante con la abogada adscrita al departamento realizó una modificación de contrato (equilibrios económicos).'
+    }, {
+        'item_text': 'Apoyo a la presidencia para elaboración, impresión y preparación de carpetas de expedientes en discusión para el Ministerio del Poder Popular de Petróleo.'
+    }, {
+        'item_text': 'Apoyo a la gerencia de contratación y al presidente de la empresa, para la recepción de contratístas en discusiones y reuniones relacionadas con los contratos en presidencia.'
+    }, {
+        'item_text': 'Asesoría para el pasante por su asesor externo con el informe práctico forense.'
     }]
 }, {
     tags: {
-        title: 'Presentacion 6',
-        text: 'Esta es una presentacion de prueba 3',
-        image: 'logo_next.jpg'
+        title: 'Caso #1',
+        text: 'Explicar la solicitud de declaratoria de emergencia comprobada basada en la: REACTIVACION DE LA CONTINUIDAD OPERACIONAL DE LOS SISTEMAS DE DESTILACIÓN ATMOSFÉRICA, UNIDAD 11 Y COQUIFICACIÓN RETARDADA, UNIDAD 12 DEL MEJORADOR DE LA EMPRESA MIXTA PETRO SAN FELIX, S.A., como consecuencia de la condición operacional.',
+        descripcion: 'A causa de la ruptura  de accesorios y partes internas de las Torres de Destilación Atmosférica (01C101) y Fraccionadora de Coque (01C201) se generó un incremento de presión súbita en el tren de Pre-calentamiento, ocasionando una ruptura en la línea de tubería identificada con el código P11026; la cual es una línea de desvió de los intercambiadores 01E116 A/B, lo que produjo fuga de producto masivo,  afectando todas las áreas adyacentes al tren del referido tren de pre-calentamiento.',
+        items_title: 'Características para la elaboración de la declaratoria de emergencia comprobada',
+        legal: '',
+        doctrina: ''
     },
-    template: 'items+image',
+    template: 'caso',
     items: [{
-        'item_text': 'Elemento 1'
+        'item_text': 'Originada por circunstancias imprevistas.'
     }, {
-        'item_text': 'Elemento 2'
+        'item_text': 'Daños graves en el momento o futuro inmediato.'
     }, {
-        'item_text': 'Elemento 3'
+        'item_text': 'La solicitud tenga caracter urgente e inaplazable.'
+    }, {
+        'item_text': 'Impedir o limitar los efectos del daño.'
+    }, {
+        'item_text': 'Debe ser específica e individualmente para cada contratación.'
     }]
 }, {
     tags: {
-        title: 'Presentacion 7',
-        text: 'Esta es una presentacion de prueba 3',
-        image: 'logo_next.jpg'
+        title: 'Caso #2',
+        text: 'Describir las modificiaciones de contrato (equilibrio económico) en la empresa mixta Petro San Felix S.A.',
+        descripcion: 'El contrato es un documento jurídico que regula la ejecución de una obra, prestación de un servicio o suministro de bienes incluidas las órdenes de compra y órdenes de servicio. Debe contener: precio, cantidades, forma de pago, tiempo, forma de entrega, condiciones, fecha de suscripción y oferta. Dichos contratos, una vez formalizados en la figura del addendum o adenda, entre los cuales recoge o contiene las modificaciones o enmiendas al contrato posterior a su firma.',
+        items_title: 'Tipos de modificaciones',
+        legal: '',
+        doctrina: ''
     },
-    template: 'items+image',
+    template: 'caso',
     items: [{
-        'item_text': 'Elemento 1'
+        'item_text': 'Cambio en cantidad de la actividad contratada.'
     }, {
-        'item_text': 'Elemento 2'
+        'item_text': 'Cambio de alcance.'
     }, {
-        'item_text': 'Elemento 3'
+        'item_text': 'Variaciones en montos, tarifas o precios unitarios.'
+    }, {
+        'item_text': 'Modificaciones en el plazo de ejecución o plazo de entrega.'
+    }, {
+        'item_text': 'Consideraciones particulares de la prorroga.'
+    }, {
+        'item_text': 'Revocación del contrato.'
+    }, {
+        'item_text': 'Adhesión a contrato existente.'
+    }, {
+        'item_text': 'Equilibrios económicos.'
+    }, {
+        'item_text': 'Cierre de contrato.'
     }]
 }, {
     tags: {
-        title: 'Presentacion 8',
-        text: 'Esta es una presentacion de prueba 3',
-        image: 'logo_next.jpg'
+        title: 'final'
     },
-    template: 'items+image',
-    items: [{
-        'item_text': 'Elemento 1'
+    template: 'final',
+    conclus: [{
+        'item2_text': 'Las pasantías como forma idónea para la adquisición y aplicación de conocimientos en el área del derecho.'
     }, {
-        'item_text': 'Elemento 2'
+        'item2_text': 'Experiencia en el área de la industria petrolera, derecho corporativo.'
     }, {
-        'item_text': 'Elemento 3'
+        'item2_text': 'Herramientas para la resolución de problemas en el departamento jurídico de Petro San Felix S.A.'
+    }, {
+        'item2_text': 'Profundización de normas, reglamentos y leyes en el área de contratación.'
+    }, {
+        'item2_text': 'Se presentaron dos casos jurídicos, el primero con una declaratoria de emergancia y la adjudicación directa, y el segundo, se explican las diferentes modificaciones de contrato y el equilibrio económico como uno de los tipos de modificaciones actualmente más frecuentes.'
+    }],
+    recoms: [{
+        'item3_text': 'Crear doctrinas internas.'
+    }, {
+        'item3_text': 'Proyectar y prevenir en la redacción de los contratos.'
+    }, {
+        'item3_text': 'Simplificar la cantidad de documentos solicitados a las contratistas.'
+    }, {
+        'item3_text': 'Declarar al departamento Jurídico los planes de mantenimiento y paradas.'
+    }, {
+        'item3_text': 'Crear un departamento exclusivo para las adjudicaciones directas en emergencia comprobada.'
     }]
 }]
