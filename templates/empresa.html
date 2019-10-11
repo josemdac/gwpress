@@ -1,9 +1,9 @@
 <img class="[LOGO_CLASS]" src="images/[IMAGE]" />
 <h2>[TITLE]</h2>
 <p>[TEXT]</p>
-<ul>
+<ul class="emplist">
     <for>
-        <li tpl="items">[ITEM_TEXT]</li>
+        <li class="[ITEM_ID]" tpl="items">[ITEM_TEXT]</li>
     </for>
 </ul>
 <img class="organigrama" src="images/[ORGANIGRAMA]" />
@@ -14,4 +14,22 @@
         box-shadow: 5px 5px 5px red;
         padding: 1%;
     }
+    img.organigrama {
+    /* position: absolute; */
+    bottom: 10%;
+    margin-left: 3%;
+    height: 60%;
+}
+
+ul#emplist {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 50%;
+}
+
+li.emp {
+    margin-bottom: 1.5em;
+}
+
 </style>

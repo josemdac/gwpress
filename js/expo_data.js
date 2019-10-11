@@ -12,56 +12,100 @@ var slides = [{
 }, {
     tags: {
         title: 'Introducción',
-        text: 'Pasantías en la empresa Mixta Petro San Felix, S.A.'
+        text: `Pasantías en la empresa Mixta Petro San Felix, S.A.
+        <img class="ubicacion" src="images/ubicacion.png" />
+        `,
+        id: 'intro',
+        css: `<style>
+    div#intro>h2 {
+        /* margin: auto; */
+        text-align: center;
+        font-size: 3em;
+    }
+    
+    div#intro>p {
+        text-align: center;
+        vertical-align: middle;
+    }
+    
+    div#intro {
+        margin: auto;
+        /* height: min-content; */
+        /* vertical-align: middle; */
+        align-content: center;
+        vertical-align: middle;
+        /* bottom: auto; */
+   
+    }
+    img.ubicacion {
+        width: 80%;
+        opacity: 0.5;
+        padding: 2%;
+    }
+    </style>`
     },
+    item_id: "",
     template: 'items',
-    items: [{
-        'item_text': '<strong>Departamento: </strong>Gerencia de asuntos legales'
-    }, {
-        'item_text': '<strong>Caso #1</strong>: Emergencia comprobada'
-    }, {
-        'item_text': '<strong>Caso #2</strong>: Modificaciones de contrato (Addendum)'
-    }, {
-        'item_text': 'Estudios sobre el ambito corporativo'
-    }]
+    items: []
+    
 }, {
     tags: {
         title: 'Departamento Jurídico de Petro San Felix S.A.',
-        text: 'Esta es una presentacion de prueba 3',
+        text: '',
         image: 'pdvsa-logo.png',
-        logo_class: 'logo_petro',
-        organigrama: 'org.png'
+        logo_class: 'logo_petro', //Colocar foto panoramica de petro 
+        organigrama: 'organigrama.svg',
+        item_id: "emp"
     },
     template: 'empresa',
-    items: [{
-        'item_text': '<strong>Misión</strong> '
-    }, {
-        'item_text': '<strong>Visión</strong> '
-    }, {
-        'item_text': '<strong>Valores</strong> '
-    }]
+    items: []
 }, {
     tags: {
         title: 'Actividades realizadas durante las pasantías',
-        text: ''
+        text: `<script>var a = new Controls("act");</script>`,
+        item_id:"act",
+        id: "acts",
+        css: `
+        <style>
+        li.act {
+            margin-bottom: 1em;
+            padding: 1;
+            font-size: 1.2em
+            }
+            div#acts>ul {
+                margin: auto;
+            }
+            
+            div#acts>h2 {
+                font-size: 2em;
+                margin-left: center;
+                margin: 5%;
+            }
+        </style>
+        `
     },
     template: 'items',
     items: [{
-        'item_text': 'Inducción con la presentación de los integrantes de la gerencia legal.'
+        'item_text': 'Inducción con la presentación de los integrantes de la gerencia legal.',
+        'item_id': 'act'
     }, {
-        'item_text': 'Orientación de las actividades inherentes a la gerencia legal por la Abg. Yazmín Zapata.'
+        'item_text': 'Orientación de las actividades inherentes a la gerencia legal por la Abg. Yazmín Zapata.',
+        'item_id': 'act'
     }, {
-        'item_text': 'Revisión de leyes, reglamentos, y normativas internas de Petro San Felix S.A.'
+        'item_text': 'Revisión de leyes, reglamentos, y normativas internas de Petro San Felix S.A.',
+        'item_id': 'act'
     }, {
-        'item_text': 'Análisis de las normativas, leyes y reglamentos para la relación con archivos de casos realizados por la gerencia.'
+        'item_text': 'Análisis de las normativas, leyes y reglamentos para la relación con archivos de casos realizados por la gerencia.',
+        'item_id': 'act'
     }, {
-        'item_text': 'La pasante con la abogada adscrita al departamento realizó una modificación de contrato (equilibrios económicos).'
+        'item_text': 'La pasante con la abogada adscrita al departamento realizó una modificación de contrato (equilibrios económicos).',
+        'item_id': 'act'
     }, {
-        'item_text': 'Apoyo a la presidencia para elaboración, impresión y preparación de carpetas de expedientes en discusión para el Ministerio del Poder Popular de Petróleo.'
+        'item_text': 'Apoyo a la presidencia y la gerencia de contratación, para la recepción de contratístas en discusiones, reuniones relacionadas con los contratos, y otras actividades legales de la empresa.',
+        'item_id': 'act'
     }, {
-        'item_text': 'Apoyo a la gerencia de contratación y al presidente de la empresa, para la recepción de contratístas en discusiones y reuniones relacionadas con los contratos en presidencia.'
-    }, {
-        'item_text': 'Asesoría para el pasante por su asesor externo con el informe práctico forense.'
+        'item_text': 'Asesoría para el pasante por su asesor externo con el informe práctico forense.',
+        'item_id': 'act'
     }]
 }, {
     tags: {

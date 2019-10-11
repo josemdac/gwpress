@@ -73,6 +73,7 @@ class Handler {
                 }, 4000);
             }, 5000);
         }, 9000);
+        this.intro_done = true;
     }
 
     static toggle_slide() {
