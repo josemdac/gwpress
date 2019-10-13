@@ -39,7 +39,7 @@ var slides = [{
     }
     img.ubicacion {
         width: 80%;
-        opacity: 0.5;
+        opacity: 0.9;
         padding: 2%;
     }
     </style>`

@@ -37,7 +37,7 @@
             player.setSize(window.innerWidth, window.innerHeight);
         });
         $(document).ready(function() {
-            $(document).on('touchmove', function(){
+            /* $(document).on('touchmove', function(){
                 if(Handler.intro_done == undefined){
                     Handler.intro();
                 }else{
@@ -46,7 +46,7 @@
                 }
 
             });
-            /**/
+            
             var timeout;
             var lastTap = 0;
             $(document).on('touchend', function(event) {
@@ -60,7 +60,7 @@
                     event.preventDefault();
                 }
                 lastTap = currentTime;
-            });
+            }); */
 
 
             $(document).on('keypress', function(e) {
@@ -76,7 +76,7 @@
                 }
             });
             $(document).on('keydown', function(e) {
-
+                console.log(e.key);
                 if (e.key == 'ArrowDown') {
                     Handler.expo.duration = 3000;
                     Handler.expo.next();

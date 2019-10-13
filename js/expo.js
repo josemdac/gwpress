@@ -105,7 +105,7 @@ class Expo {
         if (this.next_slide != undefined) {
             this.slides.unshift(this.next_slide);
         } 
-        this.next_slide = this.slides. Handler.pop();
+        this.next_slide = this.slides.pop();
         var pO = this;
         $(this.eh).on('hidden', function() {
             pO.slide_render_0(pO.next_slide);
