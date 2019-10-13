@@ -25,8 +25,31 @@
         }
         .expo_text {
             transform: scale(0.9);
+            top: -30px;
+            position: fixed;
         }
     </style>
+    <script>
+    /* Get the documentElement (<html>) to display the page in fullscreen */
+        
+
+        /* View in fullscreen */
+        function toggleFullScreen() {
+          var doc = window.document;
+          var docEl = doc.documentElement;
+
+          var requestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
+          var cancelFullScreen = doc.exitFullscreen || doc.mozCancelFullScreen || doc.webkitExitFullscreen || doc.msExitFullscreen;
+
+          if(!doc.fullscreenElement && !doc.mozFullScreenElement && !doc.webkitFullscreenElement && !doc.msFullscreenElement) {
+            requestFullScreen.call(docEl);
+          }
+          else {
+            cancelFullScreen.call(doc);
+          }
+        }
+
+        </script>
     <script>
 
         var player = new APP.Player();
@@ -40,6 +63,7 @@
             player.setSize(window.innerWidth, window.innerHeight);
         });
         $(document).ready(function() {
+            toggleFullScreen();
             /* $(document).on('touchmove', function(){
                 if(Handler.intro_done == undefined){
                     Handler.intro();
