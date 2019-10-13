@@ -24,7 +24,28 @@
             margin: 0px;
             overflow: hidden;
         }
+        .expo_text {
+            transform: scale(0.9);
+        }
     </style>
+    <script>
+        /* Get the element you want displayed in fullscreen mode (a video in this example): */
+        var elem = document.getElementsByTagName("body");
+        
+        /* When the openFullscreen() function is executed, open the video in fullscreen.
+        Note that we must include prefixes for different browsers, as they don't support the requestFullscreen method yet */
+        function openFullscreen() {
+          if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+          } else if (elem.mozRequestFullScreen) { /* Firefox */
+            elem.mozRequestFullScreen();
+          } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+            elem.webkitRequestFullscreen();
+          } else if (elem.msRequestFullscreen) { /* IE/Edge */
+            elem.msRequestFullscreen();
+          }
+        }
+        </script>
     <script>
         var player = new APP.Player();
         player.load(appdata);
