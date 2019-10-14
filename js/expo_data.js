@@ -38,7 +38,7 @@ var slides = [{
    
     }
     img.ubicacion {
-        width: 80%;
+        height: 100%;
         opacity: 0.9;
         padding: 2%;
     }
@@ -70,7 +70,7 @@ var slides = [{
         li.act {
             margin-bottom: 1em;
             padding: 1;
-            font-size: 1.2em
+            font-size: 1em
             }
             div#acts>ul {
                 margin: auto;
