@@ -131,7 +131,7 @@ var slides = [{
 }, {
     tags: {
         title: 'Caso #2',
-        text: 'Las modificiaciones de contrato (equilibrio económico) en la empresa mixta Petro San Felix S.A.',
+        text: 'Las modificiaciones de contrato Petro San Felix S.A.',
         descripcion: 'El contrato es un documento jurídico que regula la ejecución de una obra, prestación de un servicio o suministro de bienes incluidas las órdenes de compra y órdenes de servicio. Debe contener: precio, cantidades, forma de pago, tiempo, forma de entrega, condiciones, fecha de suscripción y oferta. Dichos contratos, una vez formalizados en la figura del addendum o adenda, entre los cuales recoge o contiene las modificaciones o enmiendas al contrato posterior a su firma.',
         items_title: '',
         legal: `<div style="width: 100%; margin-bottom: 1.5%">Ley de contrataciones públicas</div> <img class="art-img" src="images/caso21.svg" />`,
