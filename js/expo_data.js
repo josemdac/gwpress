@@ -20,7 +20,6 @@ var slides = [{
     div#intro>h2 {
         /* margin: auto; */
         text-align: center;
-        font-size: 3em;
     }
     
     div#intro>p {
@@ -38,9 +37,9 @@ var slides = [{
    
     }
     img.ubicacion {
-        height: 100%;
+        width: 80%;
         opacity: 0.9;
-        padding: 2%;
+        padding: 5%;
     }
     </style>`
     },
@@ -77,7 +76,6 @@ var slides = [{
             }
             
             div#acts>h2 {
-                font-size: 2em;
                 margin-left: center;
                 margin: 5%;
             }
@@ -112,8 +110,8 @@ var slides = [{
         title: 'Caso #1',
         text: 'Explicar la solicitud de declaratoria de emergencia comprobada basada en la: REACTIVACION DE LA CONTINUIDAD OPERACIONAL DE LOS SISTEMAS DE DESTILACIÓN ATMOSFÉRICA, UNIDAD 11 Y COQUIFICACIÓN RETARDADA, UNIDAD 12 DEL MEJORADOR DE LA EMPRESA MIXTA PETRO SAN FELIX, S.A., como consecuencia de la condición operacional.',
         descripcion: 'A causa de la ruptura  de accesorios y partes internas de las Torres de Destilación Atmosférica (01C101) y Fraccionadora de Coque (01C201) se generó un incremento de presión súbita en el tren de Pre-calentamiento, ocasionando una ruptura en la línea de tubería identificada con el código P11026; la cual es una línea de desvió de los intercambiadores 01E116 A/B, lo que produjo fuga de producto masivo,  afectando todas las áreas adyacentes al tren del referido tren de pre-calentamiento.',
-        items_title: 'Características para la elaboración de la declaratoria de emergencia comprobada',
-        legal: `<div style="width: 100%; margin-bottom: 1.5%">Ley de contrataciones públicas</div> <img class="art-img" src="images/caso11.svg" />`,
+        items_title: '',
+        legal: `<div style="width: 100%; margin-bottom: 1.5%">Ley de contrataciones públicas</div><div class="imgcont"> <img class="art-img" src="images/caso11.svg" /></div>`,
         doctrina: ''
     },
     template: 'caso',
@@ -131,10 +129,10 @@ var slides = [{
 }, {
     tags: {
         title: 'Caso #2',
-        text: 'Las modificiaciones de contrato Petro San Felix S.A.',
+        text: 'Explicar y analizar las modificiaciones de contrato ejecutadas en la empresa mixta Petro San Felix S.A.',
         descripcion: 'El contrato es un documento jurídico que regula la ejecución de una obra, prestación de un servicio o suministro de bienes incluidas las órdenes de compra y órdenes de servicio. Debe contener: precio, cantidades, forma de pago, tiempo, forma de entrega, condiciones, fecha de suscripción y oferta. Dichos contratos, una vez formalizados en la figura del addendum o adenda, entre los cuales recoge o contiene las modificaciones o enmiendas al contrato posterior a su firma.',
         items_title: '',
-        legal: `<div style="width: 100%; margin-bottom: 1.5%">Ley de contrataciones públicas</div> <img class="art-img" src="images/caso21.svg" />`,
+        legal: `<div style="width: 100%; margin-bottom: 1.5%">Ley de contrataciones públicas</div> <div class="imgcont"> <img class="art-img" src="images/caso21.svg" /></div>`,
         doctrina: ''
     },
     template: 'caso',
