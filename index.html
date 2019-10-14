@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body ontouchstart="">
     <script src="js/three.min.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>
@@ -29,41 +30,19 @@
             position: fixed;
         }
     </style>
+
     <script>
-    /* Get the documentElement (<html>) to display the page in fullscreen */
-        
-
-        /* View in fullscreen */
-        function toggleFullScreen() {
-          var doc = window.document;
-          var docEl = doc.documentElement;
-
-          var requestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
-          var cancelFullScreen = doc.exitFullscreen || doc.mozCancelFullScreen || doc.webkitExitFullscreen || doc.msExitFullscreen;
-
-          if(!doc.fullscreenElement && !doc.mozFullScreenElement && !doc.webkitFullscreenElement && !doc.msFullscreenElement) {
-            requestFullScreen.call(docEl);
-          }
-          else {
-            cancelFullScreen.call(doc);
-          }
-        }
-
-        </script>
-    <script>
-
         var player = new APP.Player();
         player.load(appdata);
         player.setSize(window.innerWidth, window.innerHeight);
         player.play();
-        
+
         document.body.appendChild(player.dom);
 
         window.addEventListener('resize', function() {
             player.setSize(window.innerWidth, window.innerHeight);
         });
         $(document).ready(function() {
-            toggleFullScreen();
             /* $(document).on('touchmove', function(){
                 if(Handler.intro_done == undefined){
                     Handler.intro();

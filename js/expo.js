@@ -1,6 +1,6 @@
 class Expo {
     constructor(slides, target = 'expo_text', frame = 'expo_frame',
-        end_message = 'Fin') {
+        end_message = 'Los días más importantes de tu vida son, el dia que naces y el día en que descubres por qué. <br /><br /> <strong>Mark Twain</strong>') {
         this.slides = slides;
         this.eh = document.createElement('div');
         this.target_div = target;
